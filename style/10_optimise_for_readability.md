@@ -1,4 +1,4 @@
-## Optimise for readability not performance
+## Optimise for Readability not Performance
 
 ### Summary
 
