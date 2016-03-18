@@ -12,13 +12,13 @@ A small amount of duplication may be preferable to introducing a class hierarchy
 
 Code related to assertions is straight forward to reuse outside of class hierarchies. This can be done trivially by creating classes containing static assert methods that can be statically imported (as the built in JUnit assertions now are) or more elegantly by creating custom matchers for hamcrest or FEST.
 
-### Object creation
+### Object Creation
 
 For small simple objects the mother pattern can be used, but this can quickly become a maintenance issue if the objects become more complex over time.
 
 A better pattern is the Builder pattern, this can have the added advantage of allowing tests to clearly highlight important and unimportant input.
 
-### Repeated behaviours
+### Repeated Behaviours
 
 If you are using JUnit then repeated section of code within a test can be packaged and re-used as [custom rules](https://github.com/junit-team/junit/wiki/Rules).
 
