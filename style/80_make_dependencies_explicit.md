@@ -1,4 +1,4 @@
-## Make dependencies explicit and visible
+## Make Dependencies Explicit and Visible
 
 ### Summary
 
