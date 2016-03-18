@@ -1,4 +1,4 @@
-## Only unit test code that it makes sense to unit test
+## Only Unit Test Code That It Makes Sense to Unit Test
 
 In most cases there is little value in unit testing
 
