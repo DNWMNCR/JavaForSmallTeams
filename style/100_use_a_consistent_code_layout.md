@@ -1,4 +1,4 @@
-## Use a consistent code layout within each project
+## Use a Consistent Code Layout Within Each Project
 
 ### Summary
 
