@@ -1,6 +1,6 @@
-## Fast feedback
+## Fast Feedback
 
-## The build file is truth
+## The Build File is Truth
 
 The build script provides less immediate feedback than the IDE as it must be explicitly triggered.
 
@@ -11,7 +11,7 @@ Feedback from the build script has two major advantages however
 
 As slower feedback is acceptable from the build script a larger set of static and dynamic analysis can be run from here. This will usually include a repeat of whatever analysis is run as instant feedback.
 
-## Locally runnable tests
+## Locally Runnable Tests
 
 After the compiler and static analysis the next fastest levels of feedback are the test suites.
 
