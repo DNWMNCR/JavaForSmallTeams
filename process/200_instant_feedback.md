@@ -1,4 +1,4 @@
-## Instant feedback
+## Instant Feedback
 
 A modern IDE such as Eclipse or IntelliJ will provide instant feedback as you type using the underlying compiler and configurable static analysis tools.
 
