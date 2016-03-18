@@ -1,4 +1,4 @@
-## Keep your code DRY
+## Keep Your Code DRY
 
 ### Summary
 
