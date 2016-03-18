@@ -1,6 +1,6 @@
-## Agree the language you use when discussing tests
+## Agree the Language You Use When Discussing Tests
 
-### The testing pyramid
+### The Testing Pyramid
 
 Unfortunately the language of testing is heavily overloaded, with different communities referring to different things by the same names.
 
@@ -20,7 +20,7 @@ Depending on who you speak to a "unit test" might be anything from a word docume
 
 The number of possible meanings of "integration test" is even greater.
 
-### Unit tests
+### Unit Tests
 
 A fairly tight definition of unit test now in common use in the Java community. To be a Unit test, a test must be
 
@@ -46,11 +46,11 @@ The only difference is that the compile suite does not care about isolation.
 
 If we choose to write a test that tests two (or more) *Units* in tandem, it still belongs in the compile suite if it meets the other criteria.
 
-### System tests
+### System Tests
 
 System tests are also fairly well defined. They are tests that exercise the overall system - i.e all your code and all the code it interacts with in a realistic environment.
 
-### Integration tests
+### Integration Tests
 
 Integration tests are harder to define. They occupy the large space of everything that doesn't fit the unit or system tests definitions.
 
