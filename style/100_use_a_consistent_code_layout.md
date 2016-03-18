@@ -24,7 +24,7 @@ Unless there is already broad agreement across teams about how things should be 
 
 A global preferred reference should therefore be set, but teams should be free to deviate from this as they see fit as long as a consistent style is used for the code they maintain.
 
-### Suggested formatting rules
+### Suggested Formatting Rules
 
 If your do not have your own strong preferences we suggest you follow the [Google Java Style](https://google.github.io/styleguide/javaguide.html).
 
@@ -65,15 +65,15 @@ class Example {
 
 We suggest however that the guidance in the Google guide on when to write Javadoc is ignored in favour of our own.
 
-#### Notable points about this style
+#### Notable Points About This Style
 
-##### Spaces not tabs
+##### Spaces not Tabs
 
 Tabs may appear differently depending on how an editor is configured. This will result in constant reformatting as different programmers to adapt the file to their editor settings. Spaces avoid this problem.
 
 In some languages (e.g. JavaScript before the rise of code minifiers) tabs have/had an advantage as they reduced the size of the source file compared to using multiple spaces. The increase in size of the source file is of no relevance for Java.
 
-##### One true brace style
+##### One True Brace Style
 
 There are various arguments about the supposed advantages of this style, but we suggest its use mainly because it is common in the Java community.
 
