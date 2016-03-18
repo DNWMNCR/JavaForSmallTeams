@@ -1,4 +1,4 @@
-## Know how to implement hashcode and equals
+## Know How to Implement Hashcode and Equals
 
 ### Summary
 
