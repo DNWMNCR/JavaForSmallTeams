@@ -1,4 +1,4 @@
-## Avoid floats and doubles
+## Avoid Floats and Doubles
 
 ### Summary
 
