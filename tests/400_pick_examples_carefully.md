@@ -1,4 +1,4 @@
-## Pick examples carefully 
+## Pick Examples Carefully 
 
 Traditional testing is performed with examples.
 
@@ -33,7 +33,7 @@ There is currently little experience with property based testing in the Java com
 
 One obvious issue is that it introduces randomness, although most frameworks provide some mechanism to control it and repeat test runs.
 
-## Follow the Zero, One and Many rule
+## Follow the Zero, One and Many Rule
 
 If your components deals with numbers or collections of things, make sure you use sufficient examples to describe it's behaviour.
 
@@ -43,7 +43,7 @@ The zero, one many rule defines the minimum number of cases you can hope to cons
 
 When test driving it is usually easiest to start with the *zero* test case.
 
-### Test one thing at a time
+### Test One Thing at a Time
 
 Each test case should specify one thing and one thing only.
 
