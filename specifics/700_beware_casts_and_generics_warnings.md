@@ -1,4 +1,4 @@
-## Beware casts and generics warnings
+## Beware Casts and Generics Warnings
 
 ### Summary
 
