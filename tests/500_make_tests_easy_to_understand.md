@@ -138,7 +138,7 @@ Other tests might not need to care about what the default state is, but this tes
 As we start to deal with more complex domain objects it becomes harder to separate the important values from the ones that are required to construct valid objects but not of particular interest to our test. 
 Fortunately we can use the builder pattern to ease the pain, reduce duplication, and keep the tests readable.
 
-### Name values meaningfully
+### Name Values Meaningfully
 
 If a value has an important meaning, make that meaning clear e.g
 
