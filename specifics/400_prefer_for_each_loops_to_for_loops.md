@@ -1,4 +1,4 @@
-## Prefer for-each loops to for loops
+## Prefer For-Each Loops to For Loops
 
 ### Summary
 
