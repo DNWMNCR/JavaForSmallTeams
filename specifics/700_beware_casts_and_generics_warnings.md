@@ -207,7 +207,7 @@ While most Java programmers will prefer the earlier OO version, this version has
 
 This pattern can help quickly tame a legacy code base that is difficult to comprehend.
 
-#### Limits of the type system
+#### Limits of the Type System
 
 Sometimes we do reach the limits of Java's type system and need to cast. 
 
