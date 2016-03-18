@@ -1,4 +1,4 @@
-## Prefer reversible decisions
+## Prefer Reversible Decisions
 
 ### Summary
 
