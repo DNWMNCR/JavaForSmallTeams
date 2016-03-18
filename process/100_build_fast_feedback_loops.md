@@ -1,4 +1,4 @@
-## Build fast feedback loops
+## Build Fast Feedback Loops
 
 Good code is all about getting good and timely feedback. The sooner you find out something is wrong the easier it is to fix.
 
