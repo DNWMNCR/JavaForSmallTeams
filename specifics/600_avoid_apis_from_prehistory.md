@@ -1,4 +1,4 @@
-## Avoid apis from pre-history
+## Avoid APIs from Pre-History
 
 ### Summary
 
