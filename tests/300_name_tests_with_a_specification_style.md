@@ -1,4 +1,4 @@
-## Name test cases with a specification style
+## Name Test Cases With a Specification Style
 
 Use the name of each test case to describe one (and **only** one) behaviour of the unit under test. The name should be a proposition - i.e. a statement that could be true or false.
 
@@ -42,7 +42,7 @@ This depends on the makeup of the team and how often the team changes.
 
 If the majority of people who are likely to work on the codebase over its lifetime are used to writing tests in this style then the added verbosity is not worth it. If a sufficiently large proportion are not then it is probably best for the team to stick with the convention.
 
-### Use the example style when specification style does not work
+### Use the Example Style When Specification Style Does Not Work
 
 Occasionally it is not possible to follow the specification naming style because the descriptions become too long and unwieldy. If it feels like your method names are becoming overly long ask yourself two questions
 
@@ -61,7 +61,7 @@ e.g
 
 To understand tests named with the example style you must read the code code within the tests. For this reason this specification style should be preferred when possible.
 
-### Avoid method names in test descriptions where possible
+### Avoid Method Names in Test Descriptions Where Possible
 
 Where possible avoid including method names in test names.
 
