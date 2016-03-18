@@ -1,8 +1,8 @@
-## Think units, not methods
+## Think Units, Not Methods
 
 Each behaviour that a unit test describes should normally relate to the overall *unit* rather than the responsibilities of an individual method. 
 
-### What is a unit?
+### What is a Unit?
 
 To think in terms of units we have to first answer the difficult question of what a *unit* actually is.
 
@@ -53,7 +53,7 @@ The idea that our job is to test methods is common with developers that are new 
 
 As we have seen, for `Stack` it makes far more sense to consider the behaviour of the class of a whole.
 
-### Are classes units?
+### Are Classes Units?
 
 It often does make sense to treat a class as a *unit* so this is a good default definition, but it isn't always the right granularity.
 
