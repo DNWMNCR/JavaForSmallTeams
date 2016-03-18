@@ -1,4 +1,4 @@
-### Slower feedback
+### Slower Feedback
 
 Both the compile suite and the commit suite should also be run on a CI server, normally triggered by a commit/push to the repository.
 
