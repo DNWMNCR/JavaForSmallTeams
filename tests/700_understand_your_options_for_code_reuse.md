@@ -1,4 +1,4 @@
-## Understand your options for code re-use
+## Understand Your Options for Code Reuse
 
 Reusing code is a good thing. 
 
