@@ -1,4 +1,4 @@
-## Avoid checked exceptions 
+## Avoid Checked Exceptions 
 
 ### Summary
 
