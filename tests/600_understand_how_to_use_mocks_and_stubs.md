@@ -1,4 +1,4 @@
-## Understand how to use mocks and stubs
+## Understand How to Use Mocks and Stubs
 
 There are two sorts of code and they require two different sorts of test.
 
@@ -14,7 +14,7 @@ In interaction based testing we check that objects talk to each other in the exp
 
 Usually these are created using a mocking framework.
 
-### Mocking frameworks
+### Mocking Frameworks
 
 Although it is common to refer to all objects created by a mocking framework this is inaccurate.
 
@@ -150,7 +150,7 @@ The test would fail cleanly.
 
 This pattern of being lenient when supplying values, but specific when verifying also tends to result in tests that are less brittle when things change.
 
-### Stubs in state based tests
+### Stubs in State-Based Tests
 
 By definition state based testing will never include mocks (in the strict sense of the word), but they may use stubs to supply indirect values.
 
@@ -160,7 +160,7 @@ Don't do this.
 
 Mocking frameworks should be used only to isolate our tests from objects with behaviour. If you have values that are difficult to construct consider the test data builder pattern instead·
 
-### Choosing between state and interaction testing
+### Choosing Between State and Interaction Testing
 
 Sometimes there is no choice about which to use. For example it is not possible to meaningfully specify how a cache should behave from its inputs and outputs alone. Other times we must weigh the pros and cons.
 
