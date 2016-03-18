@@ -74,13 +74,13 @@ Having said this if you find yourself discounting any of the recommendations in 
 
 Advice is here to save us from ourselves.
 
-## A note on Java versions
+## A note on Java Versions
 
 This document is intended to apply to Java 7 and 8, but will be largely applicable to Java 5 and 6.
 
 Where there are differences between Java 8 and 7 we will point them out. If you are unlucky enough to be working with an earlier version of Java you will have to discover any differences to Java 7 on your own. 
 
-## Licence
+## License
 
 This work is Copyright &copy; NCR, but may be read and shared with others under the terms of the Creative Commons Attribution Share Alike licence v4.0.   
 
