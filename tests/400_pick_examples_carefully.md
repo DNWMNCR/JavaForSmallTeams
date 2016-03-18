@@ -64,7 +64,7 @@ Multiple assertions within a test may be an indicator that the test is testing m
 
 This test tests only one concern, but uses multiple asserts to do so.
 
-### Test each thing only once
+### Test Each Thing Only Once
 
 Once you've tested a concern don't let it leak into other tests - if you do those tests are no longer testing only one thing.
 
