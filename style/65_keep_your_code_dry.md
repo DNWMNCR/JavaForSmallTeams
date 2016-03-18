@@ -2,7 +2,7 @@
 
 ### Summary
 
-Don't Repeat Yourself - avoid writing the same logic more than once.
+Don't Repeat Yourself (DRY) - avoid writing the same logic more than once.
 
 Every time you copy and paste code flick yourself in the eye. This is a great disincentive to doing it again, but over time may cause blindness.
 
