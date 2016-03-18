@@ -1,4 +1,4 @@
-## Limit variables to the smallest possible scope
+## Limit Variables to the Smallest Possible Scope
 
 ### Summary
 
