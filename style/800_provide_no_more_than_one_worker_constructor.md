@@ -1,4 +1,4 @@
-## Provide no more than one worker constructor
+## Provide no More Than One Worker Constructor
 
 ### Summary
 
