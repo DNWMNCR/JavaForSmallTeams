@@ -1,4 +1,4 @@
-## Prefer composition to inheritance
+## Prefer Composition to Inheritance
 
 ### Summary
 
@@ -44,7 +44,7 @@ Despite requiring a little more code, an experienced Java programmer would not e
 
 There are several overlapping explanations, we'll start with the most abstract and move on to more practical ones.
 
-#### Inheritance is a strong relationship
+#### Inheritance is a Strong Relationship
 
 Inheritance is used to model an IS-A relationship i.e. we are saying that our `InheritanceAbuse` class is an ArrayList and we should be able to pass one to any piece of code that accepts an ArrayList.
 
@@ -54,7 +54,7 @@ So favouring composition over inheritance is just one specific instance of the m
 
 Using inheritance makes sense when there is an IS-A relationship there but it is an inappropriate mechanism to use purely for reusing code.
 
-#### Inheritance breaks encapsulation
+#### Inheritance Breaks Encapsulation
 
 The inheritance implementation fails to encapsulate an implementation detail - that we're storing things in an ArrayList.
 
@@ -70,13 +70,13 @@ We don't know enough about what our example class is meant to do to answer these
 
 If we switch from ArrayList to some other list implementation this is visible to the classes clients. Code that previously compiled may now break even if no methods specific to ArrayList are called - the change of type alone might cause compilation failures.
 
-#### We can only do this once
+#### We Can Only Do This Once
 
 Java doesn't support multiple inheritance so we only get to pick one thing to extend. If our class also needed to store Integers inheritance isn't even an option, we'd have to use composition.
 
 Composition is inherently more flexible in single inheritance languages. 
 
-#### Composition aids testing
+#### Composition Aids Testing
 
 This is not relevant to our simple example, but it is trivial to test how classes linked together by composition interact. It is far harder when inheritance is used.
 
@@ -103,13 +103,13 @@ class MyClass {
 ```
 It is easy to inject a mock into `MyClass`. Tricks exist to isolate the code in `MyUntestableClass` from `SomeDependency` for the purpose of unit testing, but they are far more involved.
 
-#### Inheritance is static
+#### Inheritance is Static
 
 Inheritance sets a fixed relationship between concrete classes at compile time. With composition it is possible to swap in different concrete classes at runtime. 
 
 Again composition is inherently more flexible.
 
-### Interface inheritance
+### Interface Inheritance
 
 The advice to prefer composition to inheritance refers to *implementation inheritance* (i.e. extending a class). The disadvantages discussed  above do not apply to *interface inheritance* (i.e. implementing an interface).
 
@@ -155,7 +155,7 @@ With the composition based version we can decorate any `Processor`. With the inh
 
 Many common OO patterns rely on the combination of Composition and interface inheritance.
 
-### When to use implementation inheritance
+### When to Use Implementation Inheritance
 
 Almost anything that can be achieved with implementation inheritance can also be achieved using the combination of interface inheritance and composition.
 
