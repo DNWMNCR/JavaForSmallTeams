@@ -1,4 +1,4 @@
-## Do not use magic numbers
+## Do Not Use Magic Numbers
 
 ### Summary
 
