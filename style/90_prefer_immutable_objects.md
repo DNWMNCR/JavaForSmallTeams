@@ -1,4 +1,4 @@
-## Prefer immutable objects
+## Prefer Immutable Objects
 
 ### Summary
 
@@ -22,7 +22,7 @@ Unfortunately it is not always easy to tell from a class definition what the lif
 
 If we design immutable classes by default we do not need to worry about this.
 
-#### The problem with mutable objects
+#### The Problem With Mutable Objects
 
 If we have a very simple class such as `Foo`
 
@@ -58,7 +58,7 @@ public class Foo {
 ```
 We would need to search our codebase for all usages of it to establish the following :-
 
-##### It is never accessed from multiple threads
+##### It is Never Accessed from Multiple Threads
 
 `Foo` is not thread safe.
 
@@ -66,7 +66,7 @@ Writes to longs are not atomic and nothing within `Foo` itself establishes a hap
 
 If `setId` and `getId` are ever called from different threads we might get back stale or garbage values.
 
-##### `setId` is never called after `Foo` has been placed in a set
+##### `setId` Is Never Called After `Foo` Has Been Placed in a Set
 
 The `hashcode` of this class relies on a mutable field. If we modify it after we place it in a set then our program will not behave as we expect.
 
