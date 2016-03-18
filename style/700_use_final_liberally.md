@@ -1,4 +1,4 @@
-## Use final liberally
+## Use Final Liberally
 
 ### Summary
 
