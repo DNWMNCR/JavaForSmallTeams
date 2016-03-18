@@ -1,4 +1,4 @@
-## Methods Should Do One and Only One Thing
+## Methods Should Do Only One Thing
 
 ### Summary
 
