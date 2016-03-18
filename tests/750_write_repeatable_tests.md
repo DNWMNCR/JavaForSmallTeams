@@ -1,4 +1,4 @@
-## Write repeatable unit tests
+## Write Repeatable Unit Tests
 
 Unit tests must be repeatable and deterministic - it must be possible to run them thousands of times in any order and get the same result. This means that they must have no dependency on any external factor.
 
