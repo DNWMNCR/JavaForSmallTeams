@@ -1,4 +1,4 @@
-## Don't use the assert keyword
+## Don't Use the Assert Keyword
 
 ### Summary
 
