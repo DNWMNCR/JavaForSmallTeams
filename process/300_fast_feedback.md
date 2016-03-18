@@ -38,4 +38,4 @@ Although the commit suite will likely depend on external resources such as conta
 
 Installing and starting dependent resources should be handled automatically by the build scripts and tests - your project should not come with a page of notes on how to set up a development machine. 
 
-Commonly the maven cargo plugin is used to download and configure containers for testing.
+Commonly, the Maven Cargo plugin is used to download and configure containers for testing.
