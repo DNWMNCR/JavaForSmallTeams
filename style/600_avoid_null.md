@@ -20,7 +20,7 @@ The core of your application should assume that it does not have to worry about 
 Strategies to avoid null include :-
 
 * The null object pattern - when you have something you think is optional
-* The type safe null pattern (aka Option, Optional & Maybe) - when you need to express that an interface might not return something
+* The type-safe null pattern (aka Option, Optional & Maybe) - when you need to express that an interface might not return something
 * Design by contract
 
 ### The Null Object Pattern
