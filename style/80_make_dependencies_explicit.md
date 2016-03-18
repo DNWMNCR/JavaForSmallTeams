@@ -16,13 +16,13 @@ The most visible dependencies are the ones that are injected into a method as a 
 
 Less visible are the ones stored as fields but, depending on how those fields are populated, the dependencies can still be relatively easy to discover.
 
-#### Constructor injection
+#### Constructor Injection
 
 Constructor dependency injection clearly communicates an object's dependencies in a single location and ensures objects are only ever created in valid states. It allows fields to be made **final** so that their life cycle is unambiguous.
 
 This is the only way in which dependencies should be injected.
 
-#### Setter injection
+#### Setter Injection
 
 Setter injection increases the number of possible states an object could be in. Many of those states will be invalid.
 
@@ -62,7 +62,7 @@ public class Foo() {
 
 Here it is clear that we must supply a `Bar` as we are unable to construct the class without it.
 
-#### Field annotations
+#### Field Annotations
 
 While annotations on fields seem convenient they mean that the dependency will not be visible in the public api. They also tie construction of your class to the frameworks that understand them and prevent fields from being made final. 
 
@@ -70,7 +70,7 @@ Field annotations should not be used.
 
 If you are working with a dependency injection framework such as Spring either move construction of your objects into configuration classes or restrict the use on annotations to constructors. Both methods allow your classes to be constructed normally and ensure that all dependencies are visible.
 
-#### Hidden dependencies 
+#### Hidden Dependencies 
 
 Anything that is not injected into a class via a constructor or as a method parameter is a hidden dependency.
 
