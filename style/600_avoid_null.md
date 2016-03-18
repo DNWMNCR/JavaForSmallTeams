@@ -57,7 +57,7 @@ One objection that is sometimes raised by Java programmers encountering Optional
 
 Static analysis rules exists that can check for code that returns null Optionals.
 
-### Design by contract
+### Design by Contract
 
 We wish for all code that we control to be able to ignore the existence of null (unless it interfaces with some third party code that forces us to consider it). 
 
