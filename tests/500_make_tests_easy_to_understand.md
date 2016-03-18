@@ -152,7 +152,7 @@ instead of
   Foo testee = new Foo(true);
 ```
 
-### Write DAMP test code
+### Write DAMP Test Code
 
 As we have seen, in order to highlight that a value is important to a test we need to keep it within the test method that uses it. This may introduce duplication which we might not accept in normal code - but test code is a little different.
 
@@ -166,7 +166,7 @@ Test code must tell more of a story - highlighting what is important and hiding 
 
 If refactoring a small amount of code out a test method into a shared method hides what is happening, accept the duplication and leave it in place. If it does not affect readability then refactor mercilessly.
 
-## Choose the right assertion method
+## Choose the Right Assertion Method
 
 When a test fails a good assertion tells you what is wrong. 
 
