@@ -1,4 +1,4 @@
-## Make tests easy to understand
+## Make Tests Easy to Understand
 
 One of our goals when writing a test is to document what the code under tests does.
 
@@ -6,7 +6,7 @@ We achieve this in part by choosing clear specification style names for each tes
 
 Some techniques that help achieve this are discussed below.
 
-### Make test structure clear
+### Make Test Structure Clear
 
 A test can be viewed as having three parts
 
@@ -52,7 +52,7 @@ Although it is important that these three stages are visible, trying to rigorous
   }
 ```
 
-### Follow standard TEA naming convention for test variables
+### Follow Standard TEA Naming Convention for Test Variables
 
 Establishing simple conventions can make some very basic things about a test clear to a reader.
 
@@ -64,7 +64,7 @@ If you need to store a result that you will compare against an expected value in
 
 If you have stubbed a participant consider naming it `stubbedFoo`, if it is acting as a mock name it `mockedFoo`. This rule is less hard than the others - decide on a case by case basis whether you think it makes your test more or less readable. 
 
-### Highlight what is important, hide what is not
+### Highlight What is Important, Hide What is Not
 
 It should be possible to read each test case at a glance - so make things clear by highlighting what is important for that test case and hiding what is not.
 
