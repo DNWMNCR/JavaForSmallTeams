@@ -26,7 +26,7 @@ Casts get introduced into code for three main reasons
 
 We'll look at these in reverse order
 
-#### Code with raw types
+#### Code with Raw Types
 
 If code contains raw generic types (either because the code pre-dates Java 5 or the programmer is not familiar with Java) it will create the need to cast.
 
@@ -70,7 +70,7 @@ for (Integer each : list) {
 }
 ```
 
-#### Poor design
+#### Poor Design
 
 Sometimes removing a cast or fixing a warning is non trivial. We have bumped into issue two - poor design.
 
