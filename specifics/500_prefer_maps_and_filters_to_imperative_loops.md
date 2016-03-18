@@ -1,4 +1,4 @@
-## Prefer maps and filters to imperative loops
+## Prefer Maps and Filters to Imperative Loops
 
 ### Summary
 
