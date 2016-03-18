@@ -70,7 +70,7 @@ If `setId` and `getId` are ever called from different threads we might get back 
 
 The `hashcode` of this class relies on a mutable field. If we modify it after we place it in a set then our program will not behave as we expect.
 
-##### The flow of our data
+##### The Flow of Our Data
 
 Even if our program behaves correctly we need to do work in order to understand how it functions.
 
@@ -78,7 +78,7 @@ Even if our program behaves correctly we need to do work in order to understand 
 
 Perhaps there are several. Perhaps there is only one. The only way we can discover this is by examining the entire program.
 
-#### Immutable objects
+#### Immutable Objects
 
 If we can make our objects immutable we gain guarantees that mean we do not need to worry about how our objects are used.
 
@@ -184,7 +184,7 @@ public Bar doThings(Bar bar) {
 }
 ```
 
-#### When to use mutable objects
+#### When to Use Mutable Objects
 
 Mutable objects require slightly less boilerplate to create than immutable ones.
 
