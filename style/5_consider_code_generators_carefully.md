@@ -14,7 +14,7 @@ Code generators can be grouped into three rough types
 * Compile time annotation processors
 * Runtime generators/frameworks
 
-### Boilerplate generators
+### Boilerplate Generators
 
 Boilerplate generators are the simplest form of code generation. They can be further split into :-
 
@@ -26,7 +26,7 @@ We recommend that the first type are using sparingly, if at all. This is discuss
 
 Generating code from a model (such as a schema or grammar) can be a useful approach as long as the generated code is not modified and is packaged separately. If generated and non generated code are packaged within the same module this can start to cause friction (see below).
 
-### Compile time annotation processors
+### Compile Time Annotation Processors
 
 JSR 269 introduced a standard framework for processing annotations at build time. Several tools exist that utilise JSR 269  to generate code.
 
@@ -72,7 +72,7 @@ While this works well, it may also have a downside. It may create artificial mod
 
 Runtime generators do not usually introduce much friction, although sometimes issues might be experienced if javaagents are not present when running tests from the IDE.
 
-### The tradeoff
+### The Trade-off
 
 So those are the issues. 
 
