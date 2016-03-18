@@ -1,4 +1,4 @@
-## Group methods for easy comprehension
+## Group Methods for Easy Comprehension
 
 ### Summary
 
