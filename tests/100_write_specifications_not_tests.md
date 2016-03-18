@@ -1,4 +1,4 @@
-## Write specifications not tests
+## Write Specifications Not Tests
 
 Before you sit down to write a test it's important to understand *why* you are doing it. 
 
@@ -8,7 +8,7 @@ There is an unfortunate tendency for developers to look at tests as a thing you 
 
 The reason for writing them has become lost.
 
-### Why write tests?
+### Why Write Tests?
 
 The reason to write tests is to make our lives easier.
 
@@ -37,7 +37,7 @@ If you have a test that is tied to the code's implementation, to change the way 
 
 If the test must change whenever the implementation changes then we cannot trust that the test will stop regression. How do we know we did not introduce a bug into the test when we changed it?
 
-### Executable specifications
+### Executable Specifications
 
 So how do we make sure we do not write negative value tests? How do we make sure we write tests that provide the benefits in our list?
 
@@ -55,7 +55,7 @@ So this is what we must aim for - an executable specification of our code.
 
 Unfortunately it is very hard to do.
 
-### Specification first
+### Specification First
 
 One simple technique that can help is to write the specification before the code. i.e. TDD.
 
