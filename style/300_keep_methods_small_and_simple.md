@@ -1,4 +1,4 @@
-## Keep methods small and simple
+## Keep Methods Small and Simple
 
 ### Summary
 
@@ -24,7 +24,7 @@ But most large methods can be made smaller in one of three ways :-
 * Re-expressing the logic  
 * Using appropriate language features
 
-#### Splitting a method into smaller concerns
+#### Splitting a Method into Smaller Concerns
 
 Many large methods have smaller methods within them trying to find a way out.
 
@@ -146,7 +146,7 @@ enum ADomainConcept {
 }
 ```
 
-#### Using appropriate language features
+#### Using Appropriate Language Features
 
 Methods are sometimes bloated by boilerplate that solves common programming problems. The need for some of this boilerplate has been removed by new language features. 
 
