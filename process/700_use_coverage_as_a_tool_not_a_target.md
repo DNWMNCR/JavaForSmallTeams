@@ -1,4 +1,4 @@
-## Use coverage as a tool, not a target
+## Use Coverage as a Tool, not a Target
 
 Code coverage is a useful tool for catching your mistakes. 
 
