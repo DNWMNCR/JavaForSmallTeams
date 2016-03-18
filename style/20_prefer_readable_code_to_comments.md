@@ -1,4 +1,4 @@
-## Prefer readable code to comments
+## Prefer Readable Code to Comments
 
 ### Summary
 
