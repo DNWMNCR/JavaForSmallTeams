@@ -1,12 +1,12 @@
-## Testing FAQs
+## Testing FAQ
 
-### How do I test a private method?
+### How Do I Test a Private Method?
 
 You don't test methods (private or public), you test the behaviour of a unit as a whole. 
 
 If you cannot exercise the logic of a private method via the public interface is that logic actually required? If it is required and is sufficiently complex that it is causing you testing pain, then perhaps you should extract that concern into a separate unit that can be tested in isolation and injected in via the constructor?.
 
-### How do I test a void method?
+### How Do I Test a Void Method?
 
 You don't test methods (void or not), you test the behaviour of a unit as a whole. 
 
@@ -26,7 +26,7 @@ public void shouldIncreaseInSizeWhenItemsAdded() {
 }
 ```
 
-### How do I test code that reasons about the current date/time?
+### How do I Test Code That Reasons About the Current Date/Time?
 
 A bad solution is to use a static method (such as joda time's `setCurrentMillisFixed`) to set the current date.
 
@@ -38,17 +38,17 @@ The static factory method `fixed` will create an instance that represents a cons
 
 Java 7 does not provide an out of the box class for this purpose so you will need to roll your own. 
 
-### Do I need to implement a teardown method for my test?
+### Do I Need to Implement a Teardown Method for my Test?
 
 This used to be a requirement for all JUnit 3 tests. If you didn't nullify all members of a test class in a teardown your test suite began to eat memory as it grew.
 
 This is not a requirement for vanilla JUnit 4 tests, but it is possible that you may need to do so if you are using a custom runner.
 
-### What's the difference between errors and failures?
+### What's the Difference Between Errors and Failures?
 
 You should try to design your tests to produce **failures** when the code is logically wrong. You tests should only produce errors when something unexpected has happened.
 
-### How should I test for expected exceptions?
+### How Should I Test for Expected Exceptions?
 
 It depends.
 
