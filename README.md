@@ -1,6 +1,6 @@
 # Introduction
 
-## What is this? 
+## What is This? 
 
 This book is an attempt to capture what *"good"* Java code looks like and the practices that help produce it.
 
