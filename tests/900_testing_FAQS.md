@@ -110,7 +110,7 @@ Although it maintains the flow, the lambda in which the testee is called looks a
 
 When it can be used we recommend sticking with the concise `expected =` format. For more complex situations it is largely a matter of taste.
 
-### How do I test an abstract class?
+### How Do I Test an Abstract Class?
 
 An abstract class is just a dependency that some other code will use - a dependency that you have made harder than usual to isolate due to your choice to make it an abstract class.
 
@@ -125,7 +125,7 @@ The first approach will result in tests that are less tied to the implementation
 
 The second approach will avoid repetition but is tied to the implementation and is likely to be brittle.
 
-### How do I test hashcode and equals?
+### How Do I test Hashcode and Equals?
 
 Testing hashcode and equals can be fiddly and time consuming, raising questions about whether it is time well spent given that the code is likely to have been auto-generated.
 
