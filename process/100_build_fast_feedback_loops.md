@@ -8,6 +8,6 @@ Make sure your project has a well designed development workflow - the effort of 
 
 Ideally all feedback would be instantaneous, but in practice it is either impractical or impossible to get all feedback this way. 
 
-Instead software development is organized as nested levels of feedback as shown below.
+Instead software development is organized as nested levels of feedback, as shown here:
 
 ![Development feedback cycles](../generated/images/svg/feedback_cyclesncr.png)
