@@ -4,13 +4,13 @@
 
 Make sure that the dependencies of a class are clearly visible.
 
-Always inject dependencies into a class via it's constructor. Do not use other methods such as setters or annotations on fields.
+Always inject dependencies into a class using it's constructor. Do not use other methods such as setters or annotations on fields.
 
-Never introduce dependencies via hidden routes such as `Singletons` or `ThreadLocals`.
+Never introduce dependencies using hidden routes such as `Singletons` or `ThreadLocals`.
 
 ### Details
 
-Code is easier to understand if the interfaces and classes each object depends on are conspicuous and visible.
+Code is easier to understand if the interfaces and classes that each object depends on are conspicuous and visible.
 
 The most visible dependencies are the ones that are injected into a method as a parameter.
 
@@ -26,7 +26,7 @@ This is the only way in which dependencies should be injected.
 
 Setter injection increases the number of possible states an object could be in. Many of those states will be invalid.
 
-If setter injection is used a class can be constructed in a half initialised state. What constitutes a fully initialised state can only be determined by examining the code.
+If setter injection is used a class can be constructed in a half initialized state. What constitutes a fully initialized state can only be determined by examining the code.
 
 **Bad**
 ```java
