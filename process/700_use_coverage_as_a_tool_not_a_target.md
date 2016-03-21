@@ -2,7 +2,7 @@
 
 Code coverage is a useful tool for catching your mistakes. 
 
-The tool that should work for you. You do not work for the tool.
+The tool should work for you; you do not work for the tool.
 
 It is most useful when run at the point at which the code and tests are being written, rather than on a CI server some hours later.
 
