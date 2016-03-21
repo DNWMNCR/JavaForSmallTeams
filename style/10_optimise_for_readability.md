@@ -1,8 +1,8 @@
-## Optimise for Readability not Performance
+## Optimize for Readability not Performance
 
 ### Summary
 
-Don't optimise your code prematurely. 
+Don't optimize your code prematurely. 
 
 Concentrate on making it simple and understandable instead.
 
