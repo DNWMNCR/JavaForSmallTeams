@@ -12,9 +12,7 @@ This is all that code coverage does.
 
 Code that has 100% branch coverage may or may not have been tested. Code coverage tells you that some tests have executed the code, not that they have meaningfully tested it. Don't let it lull you into a false sense of security.
 
-Some teams set coverage targets that code must meet (75% seems to be a common figure). 
-
-Although well intentioned this practice is often damaging.
+Some teams set coverage targets that code must meet (75% seems to be a common figure). Although well-intentioned, this practice is often damaging.
 
 Code coverage is easy to measure. Other properties of tests that are desirable (or highly undesirable) are not easy to measure e.g
 
