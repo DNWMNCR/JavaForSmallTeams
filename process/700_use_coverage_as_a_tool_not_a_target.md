@@ -4,13 +4,13 @@ Code coverage is a useful tool for catching your mistakes.
 
 The tool should work for you; you do not work for the tool.
 
-It is most useful when run at the point at which the code and tests are being written, rather than on a CI server some hours later.
+It is most useful when code coverage is run at the point at which the code and tests are being written, rather than on a CI server hours later.
 
-Gaps in code coverage highlight areas of code that have not been tested. Some of these may be expected and intentional, others may be a surprise. It is these latter ones that provide useful information.
+Gaps in code coverage highlight areas of code that have not been tested. Some of these gaps may be expected and intentional, others may be a surprise. It is these surprise gaps that provide useful information.
 
 This is all that code coverage does.
 
-Code that has 100% branch coverage may or may not have been tested. Code coverage tells you is that some tests have executed the code, not that they have meaningfully tested it. Don't let it lull you into a false sense of security.
+Code that has 100% branch coverage may or may not have been tested. Code coverage tells you that some tests have executed the code, not that they have meaningfully tested it. Don't let it lull you into a false sense of security.
 
 Some teams set coverage targets that code must meet (75% seems to be a common figure). 
 
