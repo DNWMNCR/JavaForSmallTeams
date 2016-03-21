@@ -27,7 +27,7 @@ All of the above are reasonable definitions of *simple*. None of them is the sin
 
 Recognizing simple isn't easy and keeping things simple takes a lot of work. 
 
-If we could somehow measure the complexity of our software we would find that there is some minimum value that each piece of software must contain. 
+If we could somehow measure the complexity of our software, we would find that there is some minimum value that each piece of software must contain. 
 
 If the software were any simpler, then it would be less functional. 
 
@@ -35,7 +35,7 @@ Real programs will always contain this *inherent complexity* plus a bit. This ex
 
 Telling accidental complexity apart from inherent complexity is of course also hard. 
 
-Fortunately YAGNI gives us some useful advise on how to keep things simple without having to tell accidental and inherent complexity apart.
+Fortunately YAGNI gives us some useful advice on how to keep things simple without having to tell accidental and inherent complexity apart.
 
 The more a system does the higher it's overall complexity will be. If we make a system that does less it will be simpler - it will have less *inherent complexity* and less *accidental complexity*
 
