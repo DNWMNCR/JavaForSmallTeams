@@ -44,5 +44,5 @@ Your goal is, therefore, to create the minimum amount of functionality that solv
 * Don't implement things because you think you might need them later. Implement in the future if you need it.
 * Don't try and make things "flexible" or "configurable". Make them do just what they need to do - parameterize them at the point you have a need to do so.
 
-If you create more than the minimum amount of functionality you will have more code to debug, understand and maintain from that point forward until someone has the confidence to delete it.
+If you create more than the minimum amount of functionality, you will have more code to debug, understand and maintain from that point forward until someone has the confidence to delete it.
 
