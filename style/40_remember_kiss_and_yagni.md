@@ -4,11 +4,11 @@
 
 Keep your design as simple as possible. 
 
-Create only the functionality you need now - not what you *think* you might need in the future.
+Create only the functionality you need now - not what you think you might need in the future.
 
 ### Details
 
-The KISS (Keep It Simple Stupid) and YAGNI (You Ain't Going To Need It) acronyms provide good advice that is worth remembering while coding.
+The KISS (Keep It Simple, Stupid) and YAGNI (You Ain't Going To Need It) acronyms provide good advice that is worth remembering while coding.
 
 KISS advises that we keep our code and designs as simple as possible.  
 
@@ -23,9 +23,9 @@ Given two solutions to a problem which one is simpler?
 * The one where the logic is most explicit?
 * The one which is consistent with a solution used elsewhere?
 
-All of the above are reasonable definitions of *simple*. None of them is the single definition that it will always make sense to follow.
+All of the above are reasonable definitions of *simple*. None of them is the single definition always makes sense to follow.
 
-Recognising simple isn't easy and keeping things simple takes a lot of work. 
+Recognizing simple isn't easy and keeping things simple takes a lot of work. 
 
 If we could somehow measure the complexity of our software we would find that there is some minimum value that each piece of software must contain. 
 
