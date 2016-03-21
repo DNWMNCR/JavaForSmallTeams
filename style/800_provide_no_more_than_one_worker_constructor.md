@@ -2,7 +2,7 @@
 
 ### Summary
 
-Although a class may provide many constructors only one should write to fields and initialise the class.
+Although a class may provide many constructors, only one should write to fields and initialise the class.
 
 ### Details
 
@@ -36,7 +36,7 @@ public class Foo {
   }
 }
 ```
-The duplication of values in the above code could be removed, but it would remain confusing as the concern of initialising the class is spread across three locations. 
+The duplication of values in the above code could be removed but it would remain confusing because the concern of initializing the class is spread across three locations. 
 
 If more fields were to be added it would be easy to forget to initialise them in the existing constructors. 
 
