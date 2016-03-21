@@ -26,7 +26,7 @@ This is the only way in which dependencies should be injected.
 
 Setter injection increases the number of possible states an object could be in. Many of those states will be invalid.
 
-If setter injection is used a class can be constructed in a half initialized state. What constitutes a fully initialized state can only be determined by examining the code.
+If setter injection is used, a class can be constructed in a half-initialized state. What constitutes a fully-initialized state can only be determined by examining the code.
 
 **Bad**
 ```java
@@ -43,7 +43,7 @@ public class Foo() {
 }
 ```
 
-Here a `NullPointerException` will be thrown if `Foo` is constructed without calling `setBar`.
+Here, a `NullPointerException` will be thrown if `Foo` is constructed without calling `setBar`.
 
 **Better**
 ```java
@@ -60,11 +60,11 @@ public class Foo() {
 }
 ```
 
-Here it is clear that we must supply a `Bar` as we are unable to construct the class without it.
+Here, it is clear that we must supply a `Bar` as we are unable to construct the class without it.
 
 #### Field Annotations
 
-While annotations on fields seem convenient they mean that the dependency will not be visible in the public api. They also tie construction of your class to the frameworks that understand them and prevent fields from being made final. 
+While annotations on fields seem convenient they mean that the dependency will not be visible in the public API. They also tie construction of your class to the frameworks that understand them and prevent fields from being made final. 
 
 Field annotations should not be used.
 
