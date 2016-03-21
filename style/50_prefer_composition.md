@@ -4,13 +4,13 @@
 
 Composition usually results in more flexible designs. 
 
-First consider using composition, fall back to using inheritance only when composition does not seem to be a good fit.
+First consider using composition, then fall back to using inheritance only when composition does not seem to be a good fit.
 
 ### Details
 
-Composition means building things by adding other things together. Inheritance is building things by extending behaviour based on an existing class by creating a child classes.
+Composition means building things by adding other things together. Inheritance is building things by extending behavior based on an existing class by creating a child classes.
 
-To take a minimal example, if there is a requirement for a class to accept and store String values some programmers new to Java will reach for inheritance as follows.
+To take a minimal example- If there is a requirement for a class to accept and store String values, some programmers new to Java will reach for inheritance as follows:
 
 ```java
 class InheritanceAbuse extends ArrayList<String> {
@@ -40,17 +40,17 @@ class UsesComposition {
 }
 ```
 
-Despite requiring a little more code, an experienced Java programmer would not even consider the first approach. So why is it that the second version is preferable? 
+Despite requiring more code, an experienced Java programmer would not even consider the first approach. So why is it that the second version is preferable? 
 
 There are several overlapping explanations, we'll start with the most abstract and move on to more practical ones.
 
 #### Inheritance is a Strong Relationship
 
-Inheritance is used to model an IS-A relationship i.e. we are saying that our `InheritanceAbuse` class is an ArrayList and we should be able to pass one to any piece of code that accepts an ArrayList.
+Inheritance is used to model an IS-A relationship - i.e. we are saying that our `InheritanceAbuse` class is an ArrayList and we should be able to pass one to any piece of code that accepts an ArrayList.
 
-Composition creates a HAS-A relationship. This is a weaker relationship, and we should always favour weaker relationships in our code.
+Composition creates a HAS-A relationship; this is a weaker relationship and we should always favor weaker relationships in our code.
 
-So favouring composition over inheritance is just one specific instance of the more general advice to favour weak relationships between our classes.
+So favoring composition over inheritance is just one specific instance of the more general advice to favor weak relationships between our classes.
 
 Using inheritance makes sense when there is an IS-A relationship there but it is an inappropriate mechanism to use purely for reusing code.
 
