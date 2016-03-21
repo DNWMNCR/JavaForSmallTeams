@@ -58,13 +58,13 @@ Using inheritance makes sense when there is an IS-A relationship there but it is
 
 The inheritance implementation fails to encapsulate an implementation detail - that we're storing things in an ArrayList.
 
-The interface to our class includes all sort of methods from ArrayList such as 
+The interface to our class includes all sort of methods from ArrayList such as: 
 
 * clear
 * remove
 * contains
 
-Do these methods make sense for our class? If someone calls them could it interfere with the logic in `performBusinessLogic`? 
+Do these methods make sense for our class? If someone calls them, could it interfere with the logic in `performBusinessLogic`? 
 
 We don't know enough about what our example class is meant to do to answer these questions definitively, but the answer is most likely that we would prefer not to expose these methods. 
 
@@ -72,7 +72,7 @@ If we switch from ArrayList to some other list implementation this is visible to
 
 #### We Can Only Do This Once
 
-Java doesn't support multiple inheritance so we only get to pick one thing to extend. If our class also needed to store Integers inheritance isn't even an option, we'd have to use composition.
+Java doesn't support multiple inheritance so we only get to pick one thing to extend. If our class also needed to store Integers then inheritance isn't even an option so we'd have to use composition.
 
 Composition is inherently more flexible in single inheritance languages. 
 
