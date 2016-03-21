@@ -37,12 +37,12 @@ Telling accidental complexity apart from inherent complexity is of course also h
 
 Fortunately YAGNI gives us some useful advice on how to keep things simple without having to tell accidental and inherent complexity apart.
 
-The more a system does the higher it's overall complexity will be. If we make a system that does less it will be simpler - it will have less *inherent complexity* and less *accidental complexity*
+The more a system does, the higher it's overall complexity will be. If we make a system that does less, it will be simpler - it will have less *inherent complexity* and less *accidental complexity*
 
-Your goal is therefore to create the minimum amount of functionality that solves the problems you have right **now**.
+Your goal is, therefore, to create the minimum amount of functionality that solves the problems you have right **now**.
 
-* Don't implement things because you think you might need them later. Implement in the future if it turns out that you do need it.
-* Don't try and make things "flexible" or "configurable". Make them do just what they need to do - parameterise them at the point you have a need to do so.
+* Don't implement things because you think you might need them later. Implement in the future if you need it.
+* Don't try and make things "flexible" or "configurable". Make them do just what they need to do - parameterize them at the point you have a need to do so.
 
 If you create more than the minimum amount of functionality you will have more code to debug, understand and maintain from that point forward until someone has the confidence to delete it.
 
