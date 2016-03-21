@@ -68,11 +68,11 @@ While annotations on fields seem convenient they mean that the dependency will n
 
 Field annotations should not be used.
 
-If you are working with a dependency injection framework such as Spring either move construction of your objects into configuration classes or restrict the use on annotations to constructors. Both methods allow your classes to be constructed normally and ensure that all dependencies are visible.
+If you are working with a dependency injection framework such as Spring, either move construction of your objects into configuration classes or restrict the use on annotations to constructors. Both methods allow your classes to be constructed normally and ensure that all dependencies are visible.
 
 #### Hidden Dependencies 
 
-Anything that is not injected into a class via a constructor or as a method parameter is a hidden dependency.
+Anything that is not injected into a class using a constructor or as a method parameter is a hidden dependency.
 
 These are evil.
 
@@ -110,15 +110,15 @@ public class HiddenDependencies {
 
 Injecting via the constructor makes the dependency clearly visible.
 
-By definition hidden dependencies are hard to discover but they have a second issue. They are also hard to replace.
+By definition, hidden dependencies are hard to discover but they have a second issue - they are also hard to replace.
 
 #### Seams
 
 Seams are a concept introduced by Michael Feathers in "Working Effectively with legacy code"
 
-He defines it as
+He defines it as:
 
-> "a place where you can alter behaviour in your program without editing in that place."
+> "a place where you can alter behavior in your program without editing in that place."
 
 In the original version of `HiddenDependencies`  if we wanted to replace `Database` with a mock or stub we could only do so if the singleton provided some method to modify the instance it returns. 
 
@@ -140,7 +140,7 @@ public class Database implements IDatabase {
 
 This approach introduces a seam but does not address our concerns around visibility. The dependency remains hidden.
 
-If we used this approach our codebase would remain hard to understand and we would find ourselves constantly fighting test order dependencies.
+If we used this approach, our codebase would remain hard to understand and we would find ourselves constantly fighting test order dependencies.
 
-With constructor injection we gain a seam and make the dependency visible. Even if `Database` is a singleton we are still able to isolate our code from it for testing.
+With constructor injection, we gain a seam and make the dependency visible. Even if `Database` is a singleton, we are still able to isolate our code from it for testing.
 
