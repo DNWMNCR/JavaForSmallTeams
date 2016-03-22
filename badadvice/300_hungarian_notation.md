@@ -20,4 +20,4 @@ These types of notation are like comments. They add noise and must be maintained
 
 Uncle Bob Martin puts it nicely:
 
-> "nowadays HN and other forms of type encoding are simply impediments. They make it harder to change the name or type of a variable, function, member or class. They make it harder to read the code. And they create the possibility that the encoding system will mislead the reader"
+> "nowadays, HN and other forms of type encoding are simply impediments. They make it harder to change the name or type of a variable, function, member or class. They make it harder to read the code. And they create the possibility that the encoding system will mislead the reader"
