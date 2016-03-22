@@ -216,7 +216,7 @@ There is also some *surprise*.
 
 Because it is a value, Animal would normally be implemented as a final class - but we have been forced to make it abstract. The team behind *Auto* recommend you add a package-private constructor to prevent other child classes being created. 
 
-Unlike normal Java, the order in which accessors are declared is important as it is used by the generator the define the order of the constructor parameters. Re-ordering the accessors can therefore have the surprising effect of introducing a bug.
+Unlike normal Java, the order in which accessors are declared is important because it is used by the generator to define the order of the constructor parameters. Re-ordering the accessors can, therefore, have the surprising effect of introducing a bug.
 
 #### Lombok
 
@@ -224,7 +224,7 @@ Lombok can also (amongst other things) generate full implementations of value ob
 
 It takes a different approach to Google auto.
 
-Given an annotated class such as :-
+Given an annotated class such as:
 
 ```java
 @Value 
