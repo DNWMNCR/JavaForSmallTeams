@@ -2,15 +2,15 @@
 
 ### Summary
 
-Where possible create objects that cannot be changed - especially if those objects will be long lived or globally accessible.
+Where possible, create objects that cannot be changed - especially if those objects will be long-lived or globally accessible.
 
 ### Details
 
 Mutable state makes programs harder to understand and maintain.
 
-When objects are short lived, and do not leave method scope, mutable state causes few problems. Writes and reads will be close together and there will be a clear order in which this happens.
+When objects are short-lived, and do not leave method scope, mutable state causes few problems. Writes and reads will be close together and there will be a clear order in which this happens.
 
-For longer lived objects things are more complex.
+For longer-lived objects, things are more complex.
 
 If an object escapes from a method then it may be accessed from more than one location within the code.
 
@@ -18,7 +18,7 @@ We must start by assuming that anything that can happen to these objects will. W
 
 The set of things that might happen to an immutable object is far smaller than for a mutable one. By constraining how long lived objects can behave we have made things simpler. There are fewer possibilities that we must consider.
 
-Unfortunately it is not always easy to tell from a class definition what the lifecycle of objects of that type will be. Perhaps only short lived instances will be created. Perhaps only long lived ones. Perhaps a mixture of the two.
+Unfortunately, it is not always easy to tell from a class definition what the lifecycle of objects of that type will be. Perhaps only short-lived instances will be created. Perhaps only long-lived ones. Perhaps a mixture of the two.
 
 If we design immutable classes by default we do not need to worry about this.
 
@@ -56,7 +56,7 @@ public class Foo {
   }
 }
 ```
-We would need to search our codebase for all usages of it to establish the following :-
+We would need to search our codebase for all usages of it to establish the following :
 
 ##### It is Never Accessed from Multiple Threads
 
@@ -72,11 +72,9 @@ The `hashcode` of this class relies on a mutable field. If we modify it after we
 
 ##### The Flow of Our Data
 
-Even if our program behaves correctly we need to do work in order to understand how it functions.
+Even if our program behaves correctly, we need to do work in order to understand how it functions.
 
-`setId` can be called at any point after the object is created. We can therefore only understand how data flows through our program by looking for all calls to `setId`.
-
-Perhaps there are several. Perhaps there is only one. The only way we can discover this is by examining the entire program.
+`setId` can be called at any point after the object is created. We can, therefore, only understand how data flows through our program by looking for all calls to `setId` - perhaps there are several, perhaps there is only one. The only way we can discover this is by examining the entire program.
 
 #### Immutable Objects
 
