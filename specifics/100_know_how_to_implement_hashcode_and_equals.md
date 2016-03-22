@@ -2,23 +2,23 @@
 
 ### Summary
 
-Implementing `hashCode` and `equals` is not straight-forward. Do not implement them unless it is necessary to do so. If you do implement them make sure you know what you are doing. 
+Implementing `hashCode` and `equals` is not straightforward. Do not implement them unless it is necessary to do so. If you do implement them, make sure you know what you are doing. 
 
 ### Details
 
-It is well known that if you override equals you must also override the `hashCode` method (see Effective Java item 9). 
+It is well known that if you override equals then you must also override the `hashCode` method (see Effective Java item 9). 
 
-If logically equal objects do not have the same `hashCode` they will behave in a surprising manner if placed in a hash based collection such as `HashMap`. 
+If logically-equal objects do not have the same `hashCode` they will behave in a surprising manner if placed in a hash based collection such as `HashMap`. 
 
-By surprising we mean your program will behave incorrectly in a fashion that is very difficult to debug.
+By "surprising", we mean your program will behave incorrectly in a fashion that is very difficult to debug.
 
-Unfortunately implementing equals is surprisingly hard to do correctly. Effective Java item 8 spends about 12 pages discussing the topic.  
+Unfortunately, implementing `equals` is surprisingly hard to do correctly. Effective Java item 8 spends about 12 pages discussing the topic.  
 
 The contract for equals is handily stated in the Javadoc of `java.lang.Object`. We will not repeat it here or repeat the discussion of what it means, that can be found in Effective Java and large swathes of the internet. Instead we will look at strategies for implementing it.
 
-Which ever strategy you adopt it is important that you first write tests for your implementation.
+Whichever strategy you adopt, it is important that you first write tests for your implementation.
 
-It is easy for an equals method to cause hard to diagnose bugs if the code changes (e.g. if fields are added or their type changes). Writing tests for equals methods used to be a painful and time-consuming procedure, but libraries now exist that make it trivial to specify the common cases (see Testing FAQs). 
+It is easy for an equals method to cause hard-to-diagnose bugs if the code changes (e.g. if fields are added or their type changes). Writing tests for equals methods used to be a painful and time-consuming procedure, but libraries now exist that make it trivial to specify the common cases (see Testing FAQs). 
 
 ### Don't
 
@@ -26,9 +26,9 @@ This is the simplest strategy and the one you should adopt by default in the int
 
 Most classes do not need an equals method. Unless your class represents some sort of value it makes little sense to compare it with another so stick with the inherited implementation from Object.
 
-An irritating grey area are value classes where the production code never has a requirement to compare equality but the test code does. The dilemma here is whether to implement the methods purely for the benefit of the tests or to complicate the test code with custom equality checks.
+An irritating gray area is value classes where the production code never has a requirement to compare equality but the test code does have a requirement to. The dilemma here is whether to implement the methods purely for the benefit of the tests or to complicate the test code with custom equality checks.
 
-There is of course no right answer here, but we would suggest first trying the compare-it-in-the test approach before falling back to providing a custom equals method. 
+There is, of course, no right answer here; we would suggest first trying the compare-it-in-the test approach before falling back to providing a custom equals method. 
 
 The custom equality checks can be cleanly shared by implementing a custom assertion using a library such as AssertJ or Hamcrest.
 
