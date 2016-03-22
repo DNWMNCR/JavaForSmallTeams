@@ -208,13 +208,13 @@ abstract class Animal {
 
 This is clearly far less effort than hand crafting a complete `Animal` class, but there are some downsides.
 
-Some of the issues with code generators are discussed in "Consider code generators carefully", which categorised them into *friction* and *surprise*.
+Some of the issues with code generators are discussed in "Consider Code Generators Carefully", which categorized them into *friction* and *surprise*.
 
-Here Google Auto introduces some *friction* as the code shown above will not compile within an IDE until the generator has run to produce the `AutoValue_Animal` class.
+Here, Google Auto introduces some *friction* as the code shown above will not compile within an IDE until the generator has run to produce the `AutoValue_Animal` class.
 
 There is also some *surprise*.
 
-As it is a value Animal would normally be implemented as a final class, but we have been forced to make it abstract. The team behind *Auto* recommend you add a package-private constructor to prevent other child classes being created. 
+Because it is a value, Animal would normally be implemented as a final class - but we have been forced to make it abstract. The team behind *Auto* recommend you add a package-private constructor to prevent other child classes being created. 
 
 Unlike normal Java, the order in which accessors are declared is important as it is used by the generator the define the order of the constructor parameters. Re-ordering the accessors can therefore have the surprising effect of introducing a bug.
 
