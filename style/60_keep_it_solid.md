@@ -40,13 +40,13 @@ One indication that you might be breaking this principle is the presence of empt
 
 #### Dependency Inversion Principle
 
-High level modules should not depend upon low-level modules. Both should depend upon abstractions.
+High-level modules should not depend upon low-level modules. Both should depend upon abstractions.
 
 Abstractions should never depend upon details. Details should depend upon abstractions.
 
-In practice this means you should follow one of two patterns
+In practice this means you should follow one of two patterns:
 
-1. Package the interfaces a 'high level' component depends upon with that component
+1. Package the interfaces a 'high-level' component depends upon with that component
 2. Package the interface a component depends upon separately from both the client and implementation
 
 This first approach is classic dependency inversions (contrast it with the traditional approach of have the high level component depend upon the lower layers).
