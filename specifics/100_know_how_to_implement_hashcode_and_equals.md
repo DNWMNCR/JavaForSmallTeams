@@ -132,11 +132,11 @@ The example above uses `getClass` to check that objects are of the same type. An
   }
 ```
 
-This results in a behavioural difference - comparing instances of `MyClass` with its subclasses will return true with `instanceof` but false with `getClass`.
+This results in a behavioral difference - comparing instances of `MyClass` with its subclasses will return true with `instanceof` but false with `getClass`.
 
-In Effective Java Josh Bloch argues in favour of `instanceof` as the `getClass` implementation violates a strict interpretation of the Liskov substitution principle.
+In Effective Java Josh Bloch argues in favor of `instanceof` as the `getClass` implementation violates a strict interpretation of the Liskov substitution principle.
 
-However if `instanceof` is used it is easy for the symmetric property of the equals contract to be violated if a subclass overrides equals. i.e
+However, if `instanceof` is used, it is easy for the symmetric property of the equals contract to be violated if a subclass overrides equals. i.e.:
 
 ```java
 MyClass a = new MyClass();
@@ -146,9 +146,9 @@ a.equals(b) // true
 b.equals(a) // false, a violation of symmetry
 ``` 
 
-If you find yourself in a situation where you need to consider the nuances of whether subclasses are equal to their parents we strongly suggest you reconsider your design.
+If you find yourself in a situation where you need to consider the nuances of whether subclasses are equal to their parents then we strongly suggest you reconsider your design.
 
-Having to think about maintaining the equals contract in a class hierarchy is painful and you shouldn't need to put yourself, or your team, through this for normal server side coding tasks.
+Having to think about maintaining the equals contract in a class hierarchy is painful and you shouldn't need to put yourself, or your team, through this for normal server-side coding tasks.
 
 In the majority of cases if you think it makes sense for your class to implement `hashCode` and `equals` we strongly suggest you make your class final so hierarchies do not need to be considered.
 
