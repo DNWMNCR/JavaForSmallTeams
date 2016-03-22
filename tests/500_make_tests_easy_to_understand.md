@@ -114,7 +114,7 @@ Why is it important that the testee below returns the enum `CONTINUE`?
   }
 ```
 
-If we look through the rest of the class we might find
+If we look through the rest of the class we might find:
 
 ```java
   @Before
@@ -124,7 +124,7 @@ If we look through the rest of the class we might find
   }
 ```
 
-Other tests might not need to care about what the default state is, but this test does so we should write.
+Other tests might not need to care about what the default state is, but this test does so we should write:
 
 **Better**
 ```java
@@ -135,18 +135,18 @@ Other tests might not need to care about what the default state is, but this tes
   }
 ```
 
-As we start to deal with more complex domain objects it becomes harder to separate the important values from the ones that are required to construct valid objects but not of particular interest to our test. 
-Fortunately we can use the builder pattern to ease the pain, reduce duplication, and keep the tests readable.
+As we start to deal with more complex domain objects, it becomes harder to separate the important values from the ones that are required to construct valid objects but not of particular interest to our test. 
+Fortunately, we can use the builder pattern to ease the pain, reduce duplication, and keep the tests readable.
 
 ### Name Values Meaningfully
 
-If a value has an important meaning, make that meaning clear e.g
+If a value has an important meaning, make that meaning clear e.g.:
 
 ```java
   Foo testee = new Foo(PERFORM_VALIDATION);
 ```
 
-instead of
+instead of:
 
 ```java
   Foo testee = new Foo(true);
@@ -154,9 +154,9 @@ instead of
 
 ### Write DAMP Test Code
 
-As we have seen, in order to highlight that a value is important to a test we need to keep it within the test method that uses it. This may introduce duplication which we might not accept in normal code - but test code is a little different.
+As we have seen, in order to highlight that a value is important to a test, we need to keep it within the test method that uses it. This may introduce duplication which we might not accept in normal code - but test code is a little different.
 
-Copy and paste coding is bad in tests as well as production code - the more code there is the harder it is to read and a change to a concern will result in shotgun surgery if it has been duplicated throughout the tests.
+Copy and paste coding is bad in tests as well as production code - the more code there is, the harder it is to read and a change to a concern will result in shotgun surgery if it has been duplicated throughout the tests.
 
 Repetition should therefore generally be avoided in test code.
 
@@ -164,13 +164,13 @@ Test code **is** different from production code however.
 
 Test code must tell more of a story - highlighting what is important and hiding what is not. Test code should not be as DRY ( **D**on't **R**epeat **Y**ourself ) as production code. It should be DAMP ( contain **D**escriptive **A**nd **M**eaningful **P**hrases ).
 
-If refactoring a small amount of code out a test method into a shared method hides what is happening, accept the duplication and leave it in place. If it does not affect readability then refactor mercilessly.
+If refactoring a small amount of code out, a test method into a shared method hides what is happening, accept the duplication and leave it in place. If it does not affect readability then refactor mercilessly.
 
 ## Choose the Right Assertion Method
 
-When a test fails a good assertion tells you what is wrong. 
+When a test fails, a good assertion tells you what is wrong. 
 
-Although JUnit allows you to supply an assertion message this adds noise to the test. Like comments these messages should be saved for those occasions when you cannot communicate using code alone.
+Although JUnit allows you to supply an assertion message this adds noise to the test. Like comments, these messages should be saved for those occasions when you cannot communicate using code alone.
 
 Bad
 
@@ -184,5 +184,5 @@ Good
 assertEquals(2, actual);
 ```
 
-The built in assertions are however fairly limited. Alternative assertion libraries such as AssertJ provide richer functionality and result in more readable code.
+The built in assertions are fairly limited. Alternative assertion libraries such as AssertJ provide richer functionality and result in more readable code.
 
