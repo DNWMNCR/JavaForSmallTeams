@@ -8,7 +8,7 @@ Imperative loops hide application logic inside boilerplate code - prefer maps an
 
 Most loop based code can be re-written in a more declarative style using filters and maps.
 
-Java 8 made this easy by introducing lambdas and the streams api, but the same style can be applied in Java 7 using anonymous inner classes and third party libraries such as Guava.
+Java 8 made this easy by introducing lambdas and the streams API, but the same style can be applied in Java 7 using anonymous inner classes and third party libraries such as Guava.
 
 Filters and maps highlight what the code is intended to achieve. This is less clear in the imperative implementation.
 
