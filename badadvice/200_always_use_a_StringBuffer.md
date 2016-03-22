@@ -8,7 +8,7 @@ Secondly it is an oversimplification or misunderstanding of the more nuanced and
 
 Avoiding concatenation in a loop is reasonable. Using a `StringBuilder` is likely to be more efficient if the loop executes a reasonable number of times as it will avoid string allocations. 
 
-The performance difference is unlikely to significant in most cases, but the resulting code isn't noticeably less readable so it is a premature optimisation without a cost.
+The performance difference is unlikely to be significant in most cases, but the resulting code isn't noticeably less-readable - so it is a premature optimization without a cost.
 
 Lets see what happens when we apply this advice when no loop is present.
 
