@@ -94,7 +94,7 @@ public boolean isFnardy(String item) {
 }
 ```
 
-This can be easily re-expressed with less noise as :-
+This can be easily re-expressed with less noise as :
 
 **Better**
 ```java
@@ -106,7 +106,7 @@ public boolean isFnardy(String item) {
 }
 ```
 
-Or with a move to a more declarative style :-
+Or with a move to a more declarative style :
 
 ```java
 private final static Set<String> FNARDY_STRINGS 
@@ -122,7 +122,7 @@ public boolean isFnardy(String item) {
 
 Neither of the above changes alter the structure of our program or even affect the signature of the method. Both still reduce both line count and complexity while increasing readability.
 
-Simplifying things with a series of higher impact changes that extract a model of our domain is however often the best approach.
+Simplifying things with a series of higher impact changes that extract a model of our domain is, however, often the best approach.
 
 It is difficult to guess what this model might look like for our contrived example, but is likely that this conditional logic could be replaced with polymorphism.
 
