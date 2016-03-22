@@ -40,7 +40,7 @@ Effective Java tentatively suggests having your class throw an error if equals i
 }
 ```
  
-This seems like a good idea, but unfortunately will confuse most static analysis tools. On balance it probably creates more problems than it solves.
+This seems like a good idea but, unfortunately, it will confuse most static analysis tools. On balance, it probably creates more problems than it solves.
 
 ### Auto-Generate With an IDE
 
