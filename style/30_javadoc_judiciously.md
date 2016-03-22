@@ -9,9 +9,9 @@ Think carefully before deciding to write it.
 
 #### Javadoc is Good
 
-Javadoc invaluable for external teams that must consume your code without access to the source.
+Javadoc is invaluable for external teams that must consume your code without access to the source.
 
-All externally consumed code should have javadoc for it's public methods. 
+All externally consumed code should have javadoc for its public methods. 
 
 Ensure that all such javadoc concentrates on *what* a method does, not *how* it does it.
 
