@@ -4,13 +4,13 @@
 
 Don't Repeat Yourself (DRY) - avoid writing the same logic more than once.
 
-Every time you copy and paste code flick yourself in the eye. This is a great disincentive to doing it again, but over time may cause blindness.
+Every time you copy and paste code, flick yourself in the eye. This is a great disincentive to doing it again but over time may cause blindness.
 
 ### Details
 
-If the same logic is required more than once it should not be duplicated, it should instead be extracted to a well named class or method. 
+If the same logic is required more than once then it should not be duplicated; it should instead, be extracted to a well named class or method. 
 
-This will be both easier to read and easier to maintain as a change will only be required in one place should the logic need to change.
+This will be both easier to read and easier to maintain because a change will only be required in one place should the logic need to change.
 
 *Bad*
 
@@ -89,7 +89,7 @@ public void doSomethingSimilar(List<Widget> widgets) {
 
 This seemed quick and easy now, but is the start of a codebase that will suck time each time we try to understand or change it.
 
-A straightforward but very limited approach to re-use code is to introduce boolean flags.
+A straightforward but very limited approach to re-use code is to introduce Boolean flags.
 
 **Not great**
 ```java
