@@ -2,25 +2,25 @@
 
 Traditional testing is performed with examples.
 
-The overall behaviour of the component or unit is explained by supplying a series of example input and output values, or example interactions with other components.
+The overall behavior of the component or unit is explained by supplying a series of example input and output values, or example interactions with other components.
 
 Our goal is to use examples to
 
-* Communicate the general expected behaviour
-* Communicate the behaviour at any edge cases
+* Communicate the general expected behavior
+* Communicate the behavior at any edge cases
 * Gain confidence that our code is correct and remains correct when we change it
 
 So how should we pick these examples?
 
 One approach is to look at the possible inputs to the component under test. 
 
-We could fully specify our code if we provided the expected output for each possible input. Usually this is not practical however as the possible range of inputs is far too large. Instead we can look for categories of values within the possible of inputs (e.g *valid* and *invalid*) and pick an example from each one.
+We could fully specify our code if we provided the expected output for each possible input. Usually, this is not practical because the possible range of inputs is far too large. Instead, we can look for categories of values within the possible of inputs (e.g *valid* and *invalid*) and pick an example from each one.
 
-However the best approach is usually not to think in terms of possible inputs and examples, but to instead think first of the behaviours we would like our code to exhibit.
+However, the best approach is usually not to think in terms of possible inputs and examples, but to instead think first of the behaviors we would like our code to exhibit.
 
-Once we have identified the behaviour we can then pick examples that demonstrate it. The actual values used are often unimportant - "Make tests easy to understand" discusses some techniques to make unimportant values less prominent in tests and highlight the important ones.
+Once we have identified the behavior we can then pick examples that demonstrate it. The actual values used are often unimportant - "Make tests easy to understand" discusses some techniques to make unimportant values less prominent in tests and highlight the important ones.
 
-Property based testing takes this a stage further. 
+Property-based testing takes this a stage further. 
 
 Properties are identified that must hold true for all inputs or for a subset of possible inputs that meet certain criteria. The tests do not contain any example values - just a description of how they must be constrained. The examples used to check the properties are generated randomly and only ever seen if the check fails.
 
@@ -35,11 +35,11 @@ One obvious issue is that it introduces randomness, although most frameworks pro
 
 ## Follow the Zero, One and Many Rule
 
-If your components deals with numbers or collections of things, make sure you use sufficient examples to describe it's behaviour.
+If your components deals with numbers or collections of things, make sure you use sufficient examples to describe it's behavior.
 
 A good rule thumb is that test cases covering 0 (or empty), 1 and "many" are likely to be necessary. There will also be important edge cases, e.g. algorithmic code dealing with integers might need to consider `Integer.MAX` and `Integer.MIN`.
 
-The zero, one many rule defines the minimum number of cases you can hope to consider. To properly describe your code's behaviour will likely require many more.
+The zero, one many rule defines the minimum number of cases you can hope to consider. To properly describe your code's behavior will likely require many more.
 
 When test driving it is usually easiest to start with the *zero* test case.
 
