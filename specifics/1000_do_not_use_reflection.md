@@ -34,5 +34,5 @@ Reflection introduces surprises.
 
 *This method is never called, I can safely delete it.* Oh. Reflection.
 
-*I can safely change the behaviour of this private method as I know where it is called from.* Oh. Reflection.
+*I can safely change the behavior of this private method as I know where it is called from.* Oh. Reflection.
 
