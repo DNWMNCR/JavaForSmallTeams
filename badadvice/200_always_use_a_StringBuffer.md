@@ -47,4 +47,4 @@ The eclipse compiler generates the following bytecode for `concat`:
 
 A `StringBuilder` is created by the compiler behind the scenes to handle the concatenation so our simpler cleaner code produces identical bytecode to the more verbose option.
 
-The presence of loops in the code may prevent the compiler performing this optimization but code without branches will be optimized every time. Although compilers may exist that do not support this optimization it is unlikely that you will ever use them.
+The presence of loops in the code may prevent the compiler performing this optimization, but code without branches will be optimized every time. Although compilers may exist that do not support this optimization it is unlikely that you will ever use them.
