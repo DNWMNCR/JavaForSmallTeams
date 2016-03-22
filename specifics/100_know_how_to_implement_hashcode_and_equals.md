@@ -158,7 +158,7 @@ Avoid relationships that are more complex than this.
 
 ### Commons EqualsBuilder and HashCodeBuilder
 
-The apache commons hashcode and equals builders were once a popular way of generating these methods. We do not recommend their use in new code as most of what they achieved is now provided by `java.util.Objects` without bringing in a 3rd party library, or by the Guava equivalent.
+The Apache commons hashcode and equals builders were once a popular way of generating these methods. We do not recommend their use in new code as most of what they achieved is now provided by `java.util.Objects` without bringing in a 3rd party library, or by the Guava equivalent.
 
 These classes do provide the option of a single line reflection based implementation.
 
@@ -178,7 +178,7 @@ The brevity of these implementations is attractive, but their performance is mea
 
 ### Code Generators 
 
-A number of projects exist which can autogenerate value objects at build time. Two of the better known options are :-
+A number of projects exist which can auto-generate value objects at build-time. Two of the better known options are :
 
 * [Google auto](https://github.com/google/auto/tree/master/value)
 * [Project Lombok](https://projectlombok.org/)
