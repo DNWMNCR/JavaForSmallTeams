@@ -150,7 +150,7 @@ enum ADomainConcept {
 
 Methods are sometimes bloated by boilerplate that solves common programming problems. The need for some of this boilerplate has been removed by new language features. 
 
-Some of these *new* features aren't all that new, but code is still written without them.
+Some of these *new* features aren't all that new, but code is still written without them:
 
 * Java 5 Generics removes the need for ugly casts
 * The Java 5 for-each-loop can replace code using iterators and indexed loops
