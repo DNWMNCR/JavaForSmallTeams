@@ -55,6 +55,6 @@ Filters and maps highlight what the code is intended to achieve. This is less cl
   }
 ```
 
-Note that although the Java 7 version requires more lines of code (in the form of the ugly boilerplate for the anonymous inner class) the logic of the `selectValues` method is clearer. If the logic required in the Predicate or mapping Function is required in multiple places it is straightforward to move this to a common location. This is harder to achieve with the imperative version.
+Note that, although the Java 7 version requires more lines of code (in the form of the ugly boilerplate for the anonymous inner class), the logic of the `selectValues` method is clearer. If the logic required in the Predicate or mapping Function is required in multiple places then it is straightforward to move this to a common location. This is harder to achieve with the imperative version.
 
-Also note that the method that creates the Predicate has been made static. It is a good idea to do this where possible when returning an anonymous class to prevent a long lived instance preventing the parent class from being garbage collected. Although the Predicate is only short lived in this instance applying static dogmatically in all cases avoids the overhead of thinking.
+Also note that the method that creates the Predicate has been made static. It is a good idea to do this, where possible, when returning an anonymous class to prevent a long lived instance preventing the parent class from being garbage collected. Although the Predicate is only short-lived in this instance, applying static dogmatically in all cases avoids the overhead of thinking.
