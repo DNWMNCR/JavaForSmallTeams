@@ -1,6 +1,6 @@
 ## Think Units, Not Methods
 
-Each behaviour that a unit test describes should normally relate to the overall *unit* rather than the responsibilities of an individual method. 
+Each behavior that a unit test describes should normally relate to the overall *unit* rather than the responsibilities of an individual method. 
 
 ### What is a Unit?
 
@@ -8,7 +8,7 @@ To think in terms of units we have to first answer the difficult question of wha
 
 Testing in terms of methods is effectively the same as saying that a *unit* is a method. It is easy to show why this does not always work.
 
-If we were to try and write a unit test for the `push` method of `java.util.Stack` we might end up with something like
+If we were to try and write a unit test for the `push` method of `java.util.Stack` we might end up with something like:
 
 ```java
 @Test
@@ -19,7 +19,7 @@ public void testPush() {
 };
 ```
 
-Now lets test the `pop` method.
+Now lets test the `pop` method:
 
 ```java
 @Test
@@ -30,11 +30,11 @@ public void testPop() {
 };
 ```
 
-Oh. That looks kind of familiar.
+Oh. That looks familiar.
 
-The problem we are hitting is that we have defined too small a *unit*. We are trying to describe the behaviour of something that is only useful when it collaborates with other *units* of the same size.
+The problem we are hitting is that we have defined too small a *unit*. We are trying to describe the behavior of something that is only useful when it collaborates with other *units* of the same size.
 
-If we start thinking of `java.util.Stack` as our *unit* then tests become much easier to write.
+If we start thinking of `java.util.Stack` as our *unit* then tests become much easier to write:
 
 ```java
 @Test
@@ -47,17 +47,17 @@ public void shouldRetieveValuesInOrderTheyAreAdded() {
 }
 ```
 
-We have written a test that, instead of trying to describe what a method does, describes the behaviour of the class as a whole.
+We have written a test that, instead of trying to describe what a method does, describes the behavior of the class as a whole.
 
-The idea that our job is to test methods is common with developers that are new to unit testing and is unfortunately re-enforced by some IDEs and tools that provide templates to generate tests for each method of a class.
+The idea that our job is to test methods is common with developers that are new to unit testing, and is unfortunately re-enforced by some IDEs and tools that provide templates to generate tests for each method of a class.
 
-As we have seen, for `Stack` it makes far more sense to consider the behaviour of the class of a whole.
+As we have seen, for `Stack` it makes far more sense to consider the behavior of the class of a whole.
 
 ### Are Classes Units?
 
 It often does make sense to treat a class as a *unit* so this is a good default definition, but it isn't always the right granularity.
 
-If we were to try to test the `java.util.Collections` class we would find that it is perfectly reasonable to treat the `sort`, `reverse` , `singleton` methods etc as separate *units*. Each one represents a self contained logical behaviour.  
+If we were to try to test the `java.util.Collections` class we would find that it is perfectly reasonable to treat the `sort`, `reverse` , `singleton`, etc. methods as separate *units*. Each one represents a self contained logical behavior.  
 
 So sometimes *units* are as small as methods.
 
