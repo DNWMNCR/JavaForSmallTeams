@@ -190,7 +190,7 @@ If you know that a class will only ever be used to create short-lived, local obj
 
 Options exist to auto-generate both immutable and mutable classes, thereby removing mutable objects' main advantage. Two of these options are discussed further in "Know How to Implement Hashcode and Equals".
 
-Mutable objects used to be the norm in Java. As a result many common frameworks require mutable objects. Persistence and serialisation frameworks often require Java beans with no args constructors and setters. Other frameworks might require you to use two stage construction with a lifecycle method such as init.
+Mutable objects used to be the norm in Java. As a result, many common frameworks require mutable objects. Persistence and serialization frameworks often require Java beans with no args constructors and setters. Other frameworks might require you to use two-stage construction with a lifecycle method such as init.
 
 It is not always highlighted in the documentation but some long standing frameworks have been updated to support immutable objects. 
 
@@ -209,7 +209,7 @@ public class Foo  {
 }
 ```
 
-Other frameworks such as Hibernate can only be used with classes that provide a default constructor. Although they can be configured to set fields directly without the need for setters this causes more problems than it solves. 
+Other frameworks, such as Hibernate, can only be used with classes that provide a default constructor. Although they can be configured to set fields directly without the need for setters this causes more problems than it solves. 
 
-If you are tied to a framework that requires mutability you will need to use mutable objects where you interface with that framework.
+If you are tied to a framework that requires mutability then you will need to use mutable objects where you interface with that framework.
 
