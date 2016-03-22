@@ -11,7 +11,7 @@ Placing numeric or string literals directly into source code causes two problems
 1. It is unlikely that the **meaning** of the literal will be clear
 2. If the value changes updates are required where ever the literal has been duplicated
 
-Literals should therefore be replaced with well-named constants methods and  Enums.
+Literals should therefore be replaced with well-named constants methods and Enums.
 
 **Bad**
 ```java
