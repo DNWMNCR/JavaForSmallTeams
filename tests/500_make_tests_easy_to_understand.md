@@ -8,11 +8,11 @@ Some techniques that help achieve this are discussed below.
 
 ### Make Test Structure Clear
 
-A test can be viewed as having three parts
+A test can be viewed as having three parts:
 
 * Given - create the values and objects required for the test
 * When - executes the code under test 
-* Then - verifies the output/behaviour as as expected
+* Then - verifies the output/behavior as as expected
 
 These stages are also sometimes called *arrange*, *act* and *assert* by people particularly attached to the letter 'a'.
 
@@ -68,11 +68,11 @@ If you have stubbed a participant consider naming it `stubbedFoo`, if it is acti
 
 It should be possible to read each test case at a glance - so make things clear by highlighting what is important for that test case and hiding what is not.
 
-If an aspect of the input is important to the test case highlight it by setting it **explicitly** in the test case - don't rely on that value being set in a generic setup method. 
+If an aspect of the input is important to the test case, highlight it by setting it **explicitly** in the test case - don't rely on that value being set in a generic setup method. 
 
 Even if the same value is set by default, it is better to re-supply it in the test so it is clearly visible.
 
-If a particular value is not important indicate this to the reader by using well known neutral values such as `"foo"` for strings, or use clear names such as `someInt` or `anInt` for variables and methods that supply values.
+If a particular value is not important, indicate this to the reader by using well-known neutral values such as `"foo"` for strings, or use clear names such as `someInt` or `anInt` for variables and methods that supply values.
 
 Supplying values via a method call makes them less visible.
 
@@ -102,7 +102,7 @@ How about this version?
   
 ```
 
-While we need additional context to understand why `3` is an invalid value, it should be clear that the first two parameters to the `process` method are not important to the behaviour we are specifying. 
+While we need additional context to understand why `3` is an invalid value, it should be clear that the first two parameters to the `process` method are not important to the behavior we are specifying. 
 
 Why is it important that the testee below returns the enum `CONTINUE`?
 
