@@ -41,7 +41,7 @@ public void fnord(int i) {
 }
 ```
 
-If the constants you extract relate to an identifiable concept, create an Enum instead
+If the constants you extract relate to an identifiable concept, create an Enum instead:
 
 **Good**
 ```java
@@ -52,15 +52,15 @@ public void fnord(FnordStatus status) {
 }
 ```
 
-Some coding standards make statements such as "0 and 1 are exceptions to this rule". This is however an over simplification.
+Some coding standards make statements such as "0 and 1 are exceptions to this rule". This is, however, an oversimplification.
 
-Sometimes 0 and 1 will have a clear local meaning as they are being used as part of low level code e.g.
+Sometimes 0 and 1 will have a clear local meaning as they are being used as part of low level code e.g.:
 
 ```java
   if (list.size() == 0) {...}
 ```
 
-But 0 and 1 may also also have domain specific values that should be extracted into constants like any other literal.
+But 0 and 1 may also also have domain-specific values that should be extracted into constants like any other literal.
 
 Server side Java can also often be re-written in a cleaner fashion without the use of numeric literals.
 
