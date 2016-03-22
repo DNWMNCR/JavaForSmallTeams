@@ -198,7 +198,7 @@ private void doThings(List<Widget> widgets, Consumer<Widget> action ) {
 }
 ```
 
-We do not need to introduce our own interface - the built-in `Consumer<T>` is enough. We should consider introducing one if the `doThings` method were exposed publicly or the logic in `performSideEffect` was complex enough to pull into a top level class. 
+We do not need to introduce our own interface - the built-in `Consumer<T>` is enough. We should consider introducing one if the `doThings` method were exposed publicly or if the logic in `performSideEffect` was complex enough to pull into a top-level class. 
 
 The loop might also be converted to a pipeline.
 
