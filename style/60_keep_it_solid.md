@@ -18,9 +18,9 @@ Separate your concerns - a class should do one thing and one thing only. To put 
 
 #### Open / Closed Principle
 
-You should be able to extend behaviour, without modifying existing code.
+You should be able to extend behavior, without modifying existing code.
 
-*".. you should design modules that never change. When requirements change, you extend the behaviour of such modules by adding new code, not by changing old code that already works."*
+*".. you should design modules that never change. When requirements change, you extend the behavior of such modules by adding new code, not by changing old code that already works."*
 
 *— Robert Martin*
 
@@ -34,7 +34,7 @@ One indication that you are breaking this principle is the presence of `instance
 
 #### Interface Segregation Principle
 
-The Interface Segregation Principle states that clients should not be forced to implement interfaces they don't use - basically prefer small tailored interfaces to large catch all ones.
+The Interface Segregation Principle states that clients should not be forced to implement interfaces they don't use; prefer small, tailored interfaces to large, catch-all ones.
 
 One indication that you might be breaking this principle is the presence of empty methods or methods throwing `OperationNotSupportedException` in your code.
 
