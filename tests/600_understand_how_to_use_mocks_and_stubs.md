@@ -168,5 +168,5 @@ A state-based test for manager code is likely to be less easy to read and unders
 
 Interaction-based testing requires us to peek beyond the unit's external interface and into its implementation. This carries the risk that we might over-specify and create an implementation-specific test.
 
-On balance it is preferable to lean towards state based testing and where possible enable it in the design of your code. There will however be many situations in which you will decide that interaction based testing is preferable.
+On balance, it is preferable to lean towards state based testing and where possible enable it in the design of your code. There will, however, be many situations in which you will decide that interaction based testing is preferable.
 
