@@ -14,7 +14,7 @@ The reason to write tests is to make our lives easier.
 
 If we are not writing tests that do this we should stop writing them.
 
-A good test should do all of the following :-
+A good test should do all of the following:
 
 * Enable refactoring by preventing regression when the implementation changes
 * Catch bugs during initial coding
