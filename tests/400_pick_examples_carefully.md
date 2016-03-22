@@ -24,12 +24,12 @@ Property-based testing takes this a stage further.
 
 Properties are identified that must hold true for all inputs or for a subset of possible inputs that meet certain criteria. The tests do not contain any example values - just a description of how they must be constrained. The examples used to check the properties are generated randomly and only ever seen if the check fails.
 
-There are some compelling advantages to property based testing
+There are some compelling advantages to property based testing:
 
 * The tests describe what is important about the input values. In example testing this must be inferred by the reader
 * The tests will automatically find edge cases and bad assumptions made by the programmer 
 
-There is currently little experience with property based testing in the Java community however, so questions remain on how best to use it. 
+There is currently little experience with property-based testing in the Java community, so questions remain on how best to use it. 
 
 One obvious issue is that it introduces randomness, although most frameworks provide some mechanism to control it and repeat test runs.
 
