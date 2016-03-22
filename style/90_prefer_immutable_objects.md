@@ -114,9 +114,9 @@ public final class Foo {
 
 It no longer matters if `Foo` is long or short lived.
 
-It is inherently thread safe. 
+It is inherently thread-safe. 
 
-We know that whatever value we construct it with will remain until it dies, there is only one possible point where data is written so we do not need to search for others.
+We know that whatever value we construct it with will remain until it dies. There is only one possible point where data is written so we do not need to search for others.
 
 ##### Annotations
 
@@ -126,11 +126,11 @@ This does not in any way change the object's functionality but provides a way to
 
 We can tell at a glance that `Foo` is immutable as it has final fields of a well known immutable type. 
 
-The final keyword ensures only that the reference a field points to will not change. 
+The `final` keyword ensures only that the reference a field points to will not change. 
 
-If the field were of type `Bar` we would not know if it were mutable or not without examining `Bar` to see if it too were immutable. Even if we were not using a static analysis tool the use of the `Immutable` annotation would make this assessment faster. 
+If the field were of type `Bar` then we would not know if it were mutable or not without examining `Bar` to see if it too were immutable. Even if we were not using a static analysis tool the use of the `Immutable` annotation would make this assessment faster. 
 
-Instead of updating the state of immutable objects we create new instances that retain the state we do not wish to modify.
+Instead of updating the state of immutable objects, we create new instances that retain the state we do not wish to modify.
 
 This pattern seems strange to some Java programmers at first, but the programming model is similar to how the familiar `String` class works.
 
@@ -171,7 +171,7 @@ public Bar doThings(Bar bar) {
 }
 ```
 
-The call here to `withAnInt` achieves nothing as the return value is not stored. Most likely the programmer intended to write
+The call here to `withAnInt` achieves nothing because the return value is not stored. Most likely, the programmer intended to write:
 
 ```java
 public Bar doThings(Bar bar) {
@@ -186,9 +186,9 @@ public Bar doThings(Bar bar) {
 
 Mutable objects require slightly less boilerplate to create than immutable ones.
 
-If you know that a class will only ever be used to create short lived local objects you might consider making it mutable. But you must weigh this against the additional work required to ensure that the class is only ever used in this fashion as the codebase grows.
+If you know that a class will only ever be used to create short-lived, local objects then you might consider making it mutable. But you must weigh this against the additional work required to ensure that the class is only ever used in this fashion as the codebase grows.
 
-Options exist to auto-generate both immutable and mutable classes, thereby removing mutable objects' main advantage. Two of these options are discussed further in "Know how to implement hashcode and equals".
+Options exist to auto-generate both immutable and mutable classes, thereby removing mutable objects' main advantage. Two of these options are discussed further in "Know How to Implement Hashcode and Equals".
 
 Mutable objects used to be the norm in Java. As a result many common frameworks require mutable objects. Persistence and serialisation frameworks often require Java beans with no args constructors and setters. Other frameworks might require you to use two stage construction with a lifecycle method such as init.
 
