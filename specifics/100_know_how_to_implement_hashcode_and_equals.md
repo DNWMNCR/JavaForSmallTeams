@@ -235,7 +235,7 @@ public class ValueExample {
 }
 ```
 
-It will alter the class at build time to produce an implementation along the lines of
+It will alter the class at build-time to produce an implementation along the lines of:
 
 ```java
 public final class ValueExample {
