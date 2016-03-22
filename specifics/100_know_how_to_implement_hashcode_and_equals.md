@@ -150,9 +150,9 @@ If you find yourself in a situation where you need to consider the nuances of wh
 
 Having to think about maintaining the equals contract in a class hierarchy is painful and you shouldn't need to put yourself, or your team, through this for normal server-side coding tasks.
 
-In the majority of cases if you think it makes sense for your class to implement `hashCode` and `equals` we strongly suggest you make your class final so hierarchies do not need to be considered.
+In the majority of cases, if you think it makes sense for your class to implement `hashCode` and `equals`, we strongly suggest you make your class final so hierarchies do not need to be considered.
 
-If you believe you have a case where it makes sense for subclasses to be treated as equivalent to their parent use `instanceof`, but ensure that the parent equals method is made final. 
+If you believe you have a case where it makes sense for subclasses to be treated as equivalent to their parent, use `instanceof` but ensure that the parent equals method is made final. 
 
 Avoid relationships that are more complex than this.
 
