@@ -62,9 +62,7 @@ Sometimes 0 and 1 will have a clear local meaning as they are being used as part
 
 But 0 and 1 may also also have domain-specific values that should be extracted into constants like any other literal.
 
-Server side Java can also often be re-written in a cleaner fashion without the use of numeric literals.
-
-e.g.
+Server-side Java can also often be re-written in a cleaner fashion without the use of numeric literals, e.g.:
 
 ```java
   if (list.isEmpty()) {...}
