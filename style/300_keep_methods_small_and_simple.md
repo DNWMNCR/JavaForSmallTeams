@@ -12,13 +12,13 @@ One way to measure the size of a method is via the number of lines of code it co
 
 As a guide methods should not usually be longer than 7 lines in length. This is not a hard rule - just a guide of when to feel uncomfortable with a method's size. 
 
-Another way to gauge the size of a method is to see how many possible paths there are through it. The `Cyclomatic complexity` of a method gives a measure of this - it will increase as the amount of conditional logic and number of loops grows.
+Another way to gauge the size of a method is to see how many possible paths there are through it. The *Cyclomatic complexity* of a method gives a measure of this - it will increase as the amount of conditional logic and number of loops grows.
 
-As a guide methods should not usually have a complexity above 5. Again, this is not a hard rule - just a guide of when to feel uncomfortable.
+As a guide, methods should not usually have a complexity above 5. Again, this is not a hard rule, just a guide of when to feel uncomfortable.
 
 Your code will naturally contain some methods that are larger than others - some concepts are inherently more complex than others and the implementation will not become simpler if broken down further or expressed in a different way.
 
-But most large methods can be made smaller in one of three ways :-
+But most large methods can be made smaller in one of three ways :
 
 * Refactoring into a number of smaller methods
 * Re-expressing the logic  
