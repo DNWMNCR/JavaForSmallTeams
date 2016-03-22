@@ -227,5 +227,5 @@ Object fromXml(final String xml) {
 
 ```
 
-Here the compiler has no way of knowing what type has been serialised to the String. Hopefully the programmer does or else a runtime error will occur.
+Here, the compiler has no way of knowing what type has been serialized to the String. Hopefully the programmer does or else a runtime error will occur.
 
