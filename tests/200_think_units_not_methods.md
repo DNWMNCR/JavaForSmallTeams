@@ -106,7 +106,7 @@ class Subtraction implements MatchingBinaryOperator {
 
 ```
 
-We might write tests for the Addition and Subtraction classes.
+We might write tests for the Addition and Subtraction classes:
 
 ```java
 public class AdditionTest {
@@ -130,7 +130,7 @@ public class AdditionTest {
 }
 ```
 
-And for the `ThingaMeBob` class.
+And for the `ThingaMeBob` class:
 
 ```java
 public class ThingaMeBobTest {
@@ -181,19 +181,19 @@ We deleted the ones for `Addition` and `Subtraction`. The smaller units we creat
 
 Lets re-wind and imagine things happened differently. 
 
-What if we were asked to test drive the desired behaviour from scratch? What would we write?
+What if we were asked to test drive the desired behavior from scratch? What would we write?
 
 We would most likely write something that looked like our 2nd simpler version of `ThingaMeBob` and a test that looked something like `ThingAMeBobTest`.
 
 If we were then asked to add support for another 10 operations, we might leave our design fundamentally the same.
 
-What if a new requirement came for the behaviour in `ThingAMeBob` to be more dynamic, with different operations being enabled and disabled at runtime?
+What if a new requirement came for the behavior in `ThingAMeBob` to be more dynamic, with different operations being enabled and disabled at runtime?
 
 It would then make sense to refactor to something like our earlier more complex version.
 
 What should we do with the tests?
 
-We would already have tests written in terms of `ThingaMeBob` that describe all supported behaviours. Should we also fully describe `Addition`, `Subtraction` and the other 10 operations with tests as we extract them into classes?
+We would already have tests written in terms of `ThingaMeBob` that describe all supported behaviors. Should we also fully describe `Addition`, `Subtraction` and the other 10 operations with tests as we extract them into classes?
 
 There is no right answer here, but I hope it is clear that the most most useful *unit* that we have identified is `ThingaMeBob`. The smaller *units* are part of just one implementation of the functionality we require.
 
@@ -201,11 +201,11 @@ If we choose to write tests for each extracted class those tests would have some
 
 The test written in terms of `ThingaMeBob` would do a poor job of describing what each of the small extracted units does. If a test was failing it wouldn't be instantly obvious which class the bug was in. If we had to change one of the extracted classes it wouldn't be instantly obvious which test to run.
 
-So there is definitely value in writing tests for each of the extracted classes. At the same time, if we were not to do so that would also be a reasonable decision and it would reduce the cost of the refactoring.
+So there is definitely value in writing tests for each of the extracted classes. At the same time, if we were not to do so, that would also be a reasonable decision and it would reduce the cost of the refactoring.
 
 The `ThingaMeBob` tests will be fast and repeatable and allow us to work easily with the code. If we could only have tests at one level, the level we would choose is `ThingaMeBob`.
 
-So as a starting point assume that a *unit* will be a class, but recognise that this is not a hard rule.
+So, as a starting point, assume that a *unit* will be a class, but recognize that this is not a hard rule.
 
 A *unit* is really a "single self contained logical concern" - it may make sense to have several classes collaborate in order to capture that concern - as long as that collaboration provides a single well defined entry point.
 
