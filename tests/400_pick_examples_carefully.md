@@ -41,7 +41,7 @@ A good rule thumb is that test cases covering 0 (or empty), 1 and "many" are lik
 
 The zero, one many rule defines the minimum number of cases you can hope to consider. To properly describe your code's behavior will likely require many more.
 
-When test driving it is usually easiest to start with the *zero* test case.
+When test driving, it is usually easiest to start with the *zero* test case.
 
 ### Test One Thing at a Time
 
@@ -66,9 +66,9 @@ This test tests only one concern, but uses multiple asserts to do so.
 
 ### Test Each Thing Only Once
 
-Once you've tested a concern don't let it leak into other tests - if you do those tests are no longer testing only one thing.
+Once you've tested a concern, don't let it leak into other tests - if you do then those tests are no longer testing only one thing.
 
-This is a particularly easy mistake to make with interaction based testing. If it is vitally important that the method `anImportantSideEffect` is called, it is easy to find yourself verifying that method in each test case. 
+This is a particularly easy mistake to make with interaction-based testing. If it is vitally important that the method `anImportantSideEffect` is called, it is easy to find yourself verifying that method in each test case. 
 
 If the contract ever changes so that this side effect is not longer important, all tests will need to be updated.
 
