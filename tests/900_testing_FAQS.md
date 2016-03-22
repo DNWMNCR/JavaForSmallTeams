@@ -146,7 +146,7 @@ It does, however, do a very thorough job of checking the contract - including ho
 
 Although equals verifier does a good job of checking the hashcode equals contract, it has no knowledge of how you expect the methods to actually behave. If you wish equality to (for example) be defined by a single ID field only, you must write additional tests that verify this behavior.
 
-For the common scenario of a class that should be considered equal based on all of its fields the behavior may be checked in a single test.
+For the common scenario of a class that should be considered equal based on all of its fields the behavior may be checked in a single test:
 
 ```java
   @Test
