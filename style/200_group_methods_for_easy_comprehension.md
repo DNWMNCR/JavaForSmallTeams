@@ -19,7 +19,7 @@ The two goals clearly conflict because grouping the public API methods together 
 
 Questions of the "correct" location of a method will also occur when a implementation method is called from multiple locations or methods have recursive relationships. There is, of course, no one right answer and any ordering that broadly meets the second goal may be used.
 
-Constructors and static factory methods should usually be placed first in the class. The fact that a method is static should however not generally influence where it is placed.
+Constructors and static factory methods should usually be placed first in the class. The fact that a method is static should not, however, generally influence where it is placed.
 
 **Example**
 
