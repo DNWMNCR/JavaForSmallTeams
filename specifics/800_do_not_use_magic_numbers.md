@@ -2,16 +2,16 @@
 
 ### Summary
 
-Magic numbers should be replaced with well named constants that describe their meaning.
+Magic numbers should be replaced with well-named constants that describe their meaning.
 
 #### Detail 
 
-Placing numeric or String literals directly into source code causes two problems :-
+Placing numeric or string literals directly into source code causes two problems:
 
 1. It is unlikely that the **meaning** of the literal will be clear
 2. If the value changes updates are required where ever the literal has been duplicated
 
-Literals should therefore be replaced with well named constants methods and  Enums.
+Literals should therefore be replaced with well-named constants methods and  Enums.
 
 **Bad**
 ```java
