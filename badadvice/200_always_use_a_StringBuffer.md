@@ -10,7 +10,7 @@ Avoiding concatenation in a loop is reasonable. Using a `StringBuilder` is likel
 
 The performance difference is unlikely to be significant in most cases, but the resulting code isn't noticeably less-readable - so it is a premature optimization without a cost.
 
-Lets see what happens when we apply this advice when no loop is present.
+Lets see what happens when we apply this advice when no loop is present:
 
 ```java
   public String buffer(String s, int i) {
@@ -30,7 +30,7 @@ The `concat` version is far clearer.
 
 So the `concat` is cleaner of the two functions. Which is more efficient?
 
-The eclipse compiler generates the following bytecode for `concat`
+The eclipse compiler generates the following bytecode for `concat`:
 
 ```
     NEW java/lang/StringBuilder
@@ -47,4 +47,4 @@ The eclipse compiler generates the following bytecode for `concat`
 
 A `StringBuilder` is created by the compiler behind the scenes to handle the concatenation so our simpler cleaner code produces identical bytecode to the more verbose option.
 
-The presence of loops in the code may prevent the compiler performing this optimisation but code without branches will be optimised every time. Although compilers may exist that do not support this optimisation it is unlikely that you will ever use them.
+The presence of loops in the code may prevent the compiler performing this optimization but code without branches will be optimized every time. Although compilers may exist that do not support this optimization it is unlikely that you will ever use them.
